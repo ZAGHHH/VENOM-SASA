@@ -111,32 +111,6 @@ async def alive(client: Client, message: Message):
         reply_markup=keyboard,
     )
     
-    
-Client.on_message(
-    command(["المطور", f"alive@{BOT_USERNAME}"]) & filters.group & ~filters.edited
-)
-async def alive(client: Client, message: Message):
-    current_time = datetime.utcnow()
-    uptime_sec = (current_time - START_TIME).total_seconds()
-    uptime = await _human_time_duration(int(uptime_sec))
-
-    keyboard = InlineKeyboardMarkup(
-        [
-            [
-                InlineKeyboardButton("مطور السورس", url=f"https://t.me/V_O_O"),
-                ),
-            ]
-        ]
-    )
-
-    alive = f"** مطور السورس فينوم** ❤"
-
-    await message.reply_photo(
-        photo=f"{ALIVE_IMG}",
-        caption=alive,
-        reply_markup=keyboard,
-    )
-
 
 @Client.on_message(command(["البنق", f"ping@{BOT_USERNAME}"]) & ~filters.edited)
 async def ping_pong(client: Client, message: Message):
