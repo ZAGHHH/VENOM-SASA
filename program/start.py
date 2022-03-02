@@ -59,28 +59,64 @@ async def start_(client: Client, message: Message):
 🔖 ** لمعرفة كيفية استخدام هذا البوت ، يرجى النقر فوق » زر دليل الاستخدام! **
 """,
                 reply_markup=InlineKeyboardMarkup(
+
             [
+
                 [
+
                     InlineKeyboardButton(
+
                         "✨اضفني الئ مجموعتك✨",
+
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+
                     )
+
                 ],
+
                 [InlineKeyboardButton("✨طريقة الاستخدام✨", callback_data="cbhowtouse")],
+
                 [
+
                     InlineKeyboardButton("اوامر الاعضاء 📚", callback_data="cbbasic"),
-                    InlineKeyboardButton("اوامر المطور 📖", callback_data="vbbasic"),
-                    InlineKeyboardButton("اوامر المشرفين 📚", callback_data="ebbasic"),
-                    InlineKeyboardButton("✨المطور✨", url=f"https://t.me/{OWNER_NAME}"),
-                ],
-                [
-                    InlineKeyboardButton(
-                        "✨𝐬𝐨𝐮𝐫𝐜𝐞 𝑽𝑬𝑵𝑶𝑴✨", url=f"https://t.me/S_Q_I"
+
                     )
+
                 ],
+
+                    InlineKeyboardButton("اوامر المطور 📖", callback_data="vbbasic"),
+
+                    )
+
+                ],
+
+                    InlineKeyboardButton("اوامر المشرفين 📚", callback_data="ebbasic"),
+
+                    )
+
+                ],
+
+                    InlineKeyboardButton("✨المطور✨", url=f"https://t.me/{OWNER_NAME}"),
+
+                ],
+
+                [
+
+                    InlineKeyboardButton(
+
+                        "✨𝐬𝐨𝐮𝐫𝐜𝐞 𝑽𝑬𝑵𝑶𝑴✨", url=f"https://t.me/S_Q_I"
+
+                    )
+
+                ],
+
             ]
+
         ),
+
         disable_web_page_preview=True,
+
+    )
     )
 
 
