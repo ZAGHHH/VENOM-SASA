@@ -38,7 +38,7 @@ async def cbstart(_, query: CallbackQuery):
                 InlineKeyboardButton("اوامر الاعضاء 📚", callback_data="cbbasic"),
                 ],
                 [
-                InlineKeyboardButton("اوامر المطور 📖", callback_data="cbbasic"),
+                InlineKeyboardButton("اوامر المطور 📖", callback_data="vbbasic"),
                 ],
                 [
                 InlineKeyboardButton("اوامر المشرفين 📚", callback_data="cbbasic"),
